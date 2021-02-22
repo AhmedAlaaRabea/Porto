@@ -1,0 +1,179 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<style>
+  /* Base reset */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* box-sizing and font-size */
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+  /* fonts */
+  
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+  /* general */
+  body {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    color: white;
+  }
+  
+  /* nav */
+  #navbar {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: flex-end;
+    background: rgb(78, 2, 2);
+    width: 100%;
+    padding: 20px;
+  }
+  a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin-right: 5px;
+    font-size: 2.5rem;
+  }
+  li {
+    margin-right: 30px;
+  }
+  
+  /* Welcome */
+  #welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:rgb(2, 105, 105);
+    height: 100vh;
+    text-align: center;
+  }
+  h1 {
+    font-size: 6rem;
+    color: white;
+  }
+  #job {
+    font-size: 3rem;
+    color: rgb(97, 3, 11);
+    font-style: italic;
+    font-weight: 10;
+  }
+  
+  /* Projects */
+  #projects-title {
+    text-align: center;
+    font-style: bold;
+    margin-bottom: 3rem;
+  }
+  img {
+    height: 250px;
+    width: 450px;
+    border: 1px solid black;
+  }
+  #projects {
+    background: rgb(7, 148, 148);
+    height: 100vh;
+    padding-top: 80px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
+    grid-gap: 4rem;
+    max-width: 1000px;
+    margin: 70px auto;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .project-title {
+    font-size: 2rem;
+    color:rgb(78, 2, 2);
+  }
+ 
+  /* contact */
+  #contact {
+    background: rgb(2, 105, 105);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+  }
+  #lets {
+    font-size:6rem;
+  }
+  #contact-info {
+    font-size:4rem;
+  }
+  #profile-link {
+    color:rgb(97, 3, 11);
+  }
+  
+  
+</style>
+<body>
+  <nav id="navbar">
+    <ul class="nav-list">
+      <li><a href="#welcome-section">Welcome</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <section id="welcome-section">
+    <div id="intro">
+      <h1 id="title">Hi I'm Ahmed</h1>
+    <h2 id="job">a web developer</h2>
+    </div>
+  </section>
+  <section id="projects">
+    <h2 id="projects-title">Here are some of my projects</h2>
+    <div class="grid">
+      <a
+         href="https://codepen.io/MoodyQundeel/full/dyOpZPv"
+         target="_blank"
+         class="project-tile"
+         >
+        <img
+             src="https://res.cloudinary.com/dnr1ehwhd/image/upload/v1613396415/Capture_hszpa7.jpg"
+             class="project-image"
+             />
+        <p class="project-title">Mac Survey</p>
+      </a>
+       <a
+         href="https://codepen.io/MoodyQundeel/full/JjbExXB"
+         target="_blank"
+         class="project-tile"
+         >
+        <img
+             src="https://res.cloudinary.com/dnr1ehwhd/image/upload/v1613396999/Capture_2_c1fpnh.jpg"
+             class="project-image"
+             />
+        <p class="project-title">Medicine Doc</p>
+      </a>
+      </section>
+      <section id="contact">
+        <h2 id="lets">Let's work together...</h2>
+        <p id="contact-info"> Here is my <a
+           id="profile-link"
+           target="_blank"
+           href="https://www.freecodecamp.org/ahmedalaa"
+                        >FCC
+          </a>
+          </p>
+</body>
